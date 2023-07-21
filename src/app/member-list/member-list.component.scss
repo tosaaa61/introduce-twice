@@ -1,0 +1,90 @@
+:host{
+    display: block;
+    padding-bottom: 1px;
+}
+//header image
+.top{
+	width:fit-content;
+	height: auto;
+    padding-top: 59px;
+} 
+
+.top img{
+    height: auto;
+    width: 100vw;
+    opacity: 0.9;
+}
+
+.top p{
+    top: 50%;
+    left: 50%;
+    color:#fff;
+    text-shadow: 0 0 15px #666;
+    position: absolute;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin-top:0;
+    padding:0;
+}
+
+.personal{
+	margin-top: 5vw;
+}
+
+//personal
+
+//about-twice
+.about-twice{
+    width: 90vw;
+    text-align: center;
+    font-size: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+}
+.about-twice p{
+    text-shadow: 1px 2px 3px #fff;
+}
+
+//member-list
+.grid{
+    margin: 5vw 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 15px;
+    justify-content: center;
+}
+mat-card{
+    transition: 0.5s;
+    width: 25vw;
+    height: auto;
+    padding: 3px 3px;
+    text-align: center;
+}
+mat-card:hover{
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition-duration: 0.5s; 
+}
+mat-card p{
+  color: white;
+  padding: 0.8vw 0.8vw;
+  margin: 0px 0px;
+  font-size: 2vw;
+  letter-spacing: 2px;
+}
+
+//スマホ対応レスポンシブ
+@media screen and (max-width:480px) {
+    .top{
+        padding-top: 49px;
+    }
+    .about-twice p{
+        font-size: 15px;
+    }
+    mat-card p{
+        font-size: 12px;
+    }
+	
+}

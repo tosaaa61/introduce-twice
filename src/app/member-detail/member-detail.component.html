@@ -1,0 +1,31 @@
+
+<div class="detail">
+        <div class="menu-box">
+            <a>{{profile.name.global}}({{profile.name.japanese}})</a>
+        </div>
+    <div class="img">
+        <img src="assets/detail-img/{{profile.name.global}}.jpeg">
+    </div>
+    <div class="profile-card">
+        <mat-card>
+            <mat-card-title class="headline">PROFILE</mat-card-title>
+            <mat-card-content>
+                <li>生年月日: {{profile.dateOfBirth}}</li>
+                <li>国籍: {{profile.nationarity}}</li>
+                <li>メンバーカラー: {{profile.m_color}}</li>
+                <li>血液型: {{profile.bloodType}}型</li>
+            </mat-card-content>
+            <mat-card-title class="headline">ABOUT {{profile.name.global}}</mat-card-title>
+            <mat-card-content>
+                <a style="white-space: pre-wrap;">{{profile.introduce}}</a>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="insta">
+        <p>Let's Follow!  
+            <a href="{{profile.instagram}}" target="_blank">
+                <img src="assets/icon_instagram.png">
+            </a>
+        </p>
+    </div>
+</div>

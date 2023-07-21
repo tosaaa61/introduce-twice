@@ -1,0 +1,60 @@
+.detail{
+    padding-top: 80px;
+    padding-bottom: 6vh;
+}
+
+//image
+.img{
+    width: 35vw;
+    margin: 3vw auto;
+}
+
+//profile
+.profile-card{
+    max-width: 60vw;
+    margin: 3vw auto;
+    border-radius: 10px;
+}
+.profile-card mat-card{
+    background-color: rgba(255,255,255,0.9);
+}
+.profile-card .headline{
+    width: fit-content;
+    color: #ff5d9d;
+    border-bottom: 1px solid #ff5d9d;
+    margin: 2vw 2vw;
+}
+.profile-card li, .profile-card a{
+    font-size: 15px;
+    padding-top: 4px;
+    padding: 4px;
+}
+.insta{
+    text-align: center;
+}
+.insta img{
+    width: 35px;
+    margin: 0 5px;
+}
+.insta p{
+    color: #fff;
+}
+
+//スマホ対応レスポンシブ
+@media screen and (max-width:480px) {
+    .img{
+        width: 80vw;
+        margin: 20px auto;
+    }
+
+    .profile-card{
+        max-width: 90vw;
+    }
+
+    .profile-card li, .profile-card a{
+        font-size: 15px;
+        padding-top: 4px;
+        padding: 5px;
+    }
+	
+}

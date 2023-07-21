@@ -1,0 +1,23 @@
+<div class="top">
+    <img src="/assets/all-member.jpg">
+</div>
+
+<div class="personal">
+    <div class="about-twice">
+        <div class="menu-box">
+            <a>ABOUT TWICE</a>
+        </div>
+        <p style="white-space: pre-wrap;">{{aboutTwice}}</p>
+    </div>
+    <div class="mamber-list">
+        <div class="menu-box">
+            <a>MENBER PROFILE</a>
+        </div>
+        <div class="grid">
+            <mat-card *ngFor = "let profile of profiles" routerLink="/{{profile.name.global}}">
+                <img src="assets/member-img/{{profile.name.global}}.jpeg"/>
+                <p>{{profile.name.global}}</p>
+            </mat-card>
+        </div>
+    </div>
+</div>
